@@ -223,4 +223,4 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 *"In racing, data is everything. RaceIQ puts professional-grade telemetry analysis in your hands."*
 
-Visit the [Live Demo of RaceIQ](https://raceiq-rosy.vercel.app)
+Visit the [Live Demo of RaceIQ](https://raceiq-snowy.vercel.app/)
