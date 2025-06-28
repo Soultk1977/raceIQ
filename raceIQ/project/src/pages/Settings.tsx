@@ -582,7 +582,7 @@ export const Settings: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-race-accent">Version</span>
-                <span className="font-orbitron font-bold text-race-primary">1.0.0</span>
+                <span className="font-orbitron font-bold text-race-primary">1.2.6</span>
               </div>
               
               <div className="flex items-center justify-between">
