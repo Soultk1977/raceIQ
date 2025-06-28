@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-race-gray;
+  }
+  
+  body {
+    @apply bg-race-bg text-race-accent font-exo;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .racing-card {
+    @apply bg-race-card border border-race-gray rounded-lg p-6 shadow-xl hover:shadow-2xl transition-all duration-300 animate-fade-in;
+  }
+  
+  .racing-button {
+    @apply bg-race-primary text-white px-6 py-3 rounded-lg font-orbitron font-semibold uppercase tracking-wider hover:bg-opacity-80 transition-all duration-300 hover:animate-glow;
+  }
+  
+  .racing-input {
+    @apply bg-race-card border border-race-gray rounded-lg px-4 py-3 text-race-accent focus:outline-none focus:border-race-primary focus:ring-2 focus:ring-race-primary focus:ring-opacity-50 transition-all duration-300;
+  }
+  
+  .section-title {
+    @apply text-2xl font-orbitron font-bold text-race-accent mb-6 flex items-center gap-3;
+  }
+  
+  .metric-card {
+    @apply racing-card text-center hover:scale-105 transform transition-all duration-300;
+  }
+  
+  .nav-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-race-accent hover:bg-race-card hover:text-race-primary transition-all duration-300 font-medium;
+  }
+  
+  .nav-link.active {
+    @apply bg-race-primary text-white shadow-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1E1E1E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF1E1E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF3030;
+}
+
+/* Chart animations */
+.chart-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.gauge-needle {
+  transform-origin: 50% 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
